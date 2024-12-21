@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب دخول الكلان</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* خلفية داكنة */
+            color: #f5f5f5; /* لون النص */
+        }
+
+        header {
+            background-color: #1e1e1e; /* لون شريط العنوان */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ffab40;
+        }
+
+        header h1 {
+            color: #ffab40; /* لون برتقالي */
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #1e1e1e; /* خلفية داكنة للفورم */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffab40; /* لون النصوص */
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #2d2d2d;
+            color: #f5f5f5;
+            border: 1px solid #444;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #ff5722; /* لون الزر */
+            color: #f5f5f5;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #e64a19; /* تأثير عند التمرير */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1e1e1e;
+            color: #ffab40;
+            font-size: 14px;
+        }
+
+        /* تصميم خاص للجوال */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            .submit-btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>طلب دخول الكلان</h1>
+    </header>
+    <div class="container">
+        <form action="https://formsubmit.co/aboodadeeb35@gmail.com" method="POST">
+            <label for="name">اسمك:</label>
+            <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+
+            <label for="age">عمرك:</label>
+            <input type="number" id="age" name="age" placeholder="اكتب عمرك هنا" required>
+
+            <label for="country">دولتك:</label>
+            <input type="text" id="country" name="country" placeholder="اكتب دولتك هنا" required>
+
+            <label for="reason">لماذا تريد دخول الكلان؟</label>
+            <textarea id="reason" name="reason" placeholder="اكتب السبب هنا..." required></textarea>
+
+            <label for="experience">هل دخلت كلان من قبل؟</label>
+            <textarea id="experience" name="experience" placeholder="اكتب تجربتك هنا..." required></textarea>
+
+            <label for="channel">رابط قناتك:</label>
+            <input type="text" id="channel" name="channel" placeholder="أدخل رابط قناتك هنا" required>
+
+            <label for="contact">طريقة للتواصل معك:</label>
+            <input type="text" id="contact" name="contact" placeholder="مثال: واتساب، ديسكورد..." required>
+
+            <button type="submit" class="submit-btn">إرسال الطلب</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة - الكلان</p>
+    </footer>
+</body>
+</html>
